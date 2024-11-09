@@ -11,7 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
   </head>
   <body class="bg-gray-50 min-h-screen">
-    <div class="max-w-4xl mx-auto p-8">
+        <div class="max-w-4xl mx-auto p-8 pb-24"> 
+    <!-- <div class="max-w-4xl mx-auto p-8 pb-20"></div> -->
       <!-- Header -->
       <div class="text-center mb-12">
         <div
@@ -182,7 +183,22 @@
         </div>
       </div>
     </div>
-
+ 
+     <!-- Footer with adjusted positioning -->
+     <footer class="bg-white/95 backdrop-blur-lg border-t border-black/[0.08] py-4 mt-auto">
+        <div class="text-center text-sm text-gray-500">
+          Created with ❤️ by
+          <a 
+            href="https://github.com/jeffasante" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[#425b92] no-underline transition-opacity duration-200 hover:opacity-80"
+          >
+            jeffasante
+          </a>
+        </div>
+      </footer>
+      
     <script>
       let currentChecker = null;
       let history = new Map(); // Store history for each URL
