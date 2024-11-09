@@ -6,7 +6,7 @@ A real-time network monitoring tool built with vanilla JavaScript that allows yo
 ![PingIt Interface - 2](/assets/02.png)
 
 
-[Live Demo](https://pingit-xi.vercel.app)
+[Live Demo](https://jeffasante.github.io/pingit/)
 
 ## Features
 
