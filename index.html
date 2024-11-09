@@ -645,42 +645,6 @@
           return new Promise((resolve) => setTimeout(resolve, ms));
         }
 
-        // async measureLatency() {
-        //   if (!this.isOnline) return null;
-
-        //   this.lastPingTime = Date.now();
-
-        //   try {
-        //     const controller = new AbortController();
-        //     const timeoutId = setTimeout(
-        //       () => controller.abort(),
-        //       this.options.timeout
-        //     );
-
-        //     const startTime = performance.now();
-        //     const response = await fetch(
-        //       this.options.pingURL + "?nocache=" + Date.now(),
-        //       {
-        //         mode: "no-cors",
-        //         signal: controller.signal,
-        //         method: "HEAD", // Using HEAD request for faster response
-        //       }
-        //     );
-        //     clearTimeout(timeoutId);
-
-        //     const endTime = performance.now();
-        //     this.latency = Math.round(endTime - startTime);
-
-        //     return this.latency;
-        //   } catch (error) {
-        //     if (error.name === "AbortError") {
-        //       this.latency = null;
-        //       return null;
-        //     }
-        //     console.warn("Latency check failed:", error);
-        //     return null;
-        //   }
-        // }
 
         async measureLatency() {
           if (!this.isOnline) return null;
@@ -772,31 +736,7 @@
           }
           return `Connection error: ${error.message}`;
         }
-        // measureLatency() {
-        //   if (!this.isOnline) return null;
-
-        //   return new Promise((resolve) => {
-        //     const start = performance.now();
-        //     const img = new Image();
-        //     const timeout = setTimeout(() => {
-        //       img.src = "";
-        //       resolve(null);
-        //     }, this.options.timeout);
-
-        //     img.onload = () => {
-        //       clearTimeout(timeout);
-        //       const latency = Math.round(performance.now() - start);
-        //       resolve(latency);
-        //     };
-
-        //     img.onerror = () => {
-        //       clearTimeout(timeout);
-        //       resolve(null);
-        //     };
-
-        //     img.src = "https://www.google.com/favicon.ico?" + Date.now();
-        //   });
-        // }
+         
         getStatusCodeMessage(status) {
           const statusMessages = {
             400: "Bad Request",
