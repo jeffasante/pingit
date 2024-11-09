@@ -5,6 +5,9 @@ A real-time network monitoring tool built with vanilla JavaScript that allows yo
 ![PingIt Interface - 1](/assets/01.png)
 ![PingIt Interface - 2](/assets/02.png)
 
+
+[Live Demo](https://pingit-xi.vercel.app)
+
 ## Features
 
 - **Real-time Monitoring**: Continuously monitor website availability and performance
